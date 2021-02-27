@@ -12,3 +12,7 @@ Still in work...
 Last readings....
 
 ![alt text](https://github.com/sjsivo/Sivak-SPO2-Heartbeat-Sensor/blob/main/lastreading.png?raw=true)
+
+Some changes in library MAX30102_by_RF-master that i have change in max30102.cpp:
+
+![alt text](https://github.com/sjsivo/Sivak-SPO2-Heartbeat-Sensor/blob/main/changedvalues.png?raw=true)
