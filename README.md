@@ -17,3 +17,9 @@ Some change in example is needed for cheap china modules
  &nbsp;&nbsp;&nbsp;<font color="#000000">maxim_max30102_read_fifo</font><font color="#000000">(</font> <font color="#000000">(</font><font color="#000000">aun_ir_buffer</font><font color="#434f54">+</font><font color="#000000">i</font><font color="#000000">)</font><font color="#434f54">,</font><font color="#000000">(</font><font color="#000000">aun_red_buffer</font><font color="#434f54">+</font><font color="#000000">i</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;<font color="#434f54">&#47;&#47;read from MAX30102 FIFO &#47;&#47;swapped values for cheap modules</font>
 
 </pre>
+
+![alt text](https://github.com/sjsivo/Sivak-SPO2-Heartbeat-Sensor/blob/main/disp1.png?raw=true)
+
+![alt text](https://github.com/sjsivo/Sivak-SPO2-Heartbeat-Sensor/blob/main/disp2.png?raw=true)
+
+![alt text](https://github.com/sjsivo/Sivak-SPO2-Heartbeat-Sensor/blob/main/sensorMAX30102.png?raw=true)
