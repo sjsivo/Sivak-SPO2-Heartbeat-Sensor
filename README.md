@@ -1,7 +1,7 @@
 # SivakSPO2Heartbeat
 Its coppied project from instructables...
 
-Used MAX30102 Sensor and Nokia 5110 LCD.
+Used ESP32, MAX30102 Sensor and Nokia 5110 LCD.
 
 Libraries:
 U8g2lib.h
