@@ -1,7 +1,12 @@
 # SivakSPO2Heartbeat
 Its coppied project from instructables...
 
-Used MAX30102 Sensor and LCD.
+Used MAX30102 Sensor and Nokia 5110 LCD.
+
+Libraries:
+U8g2lib.h
+MAX30102.h
+algorithm_by_RF.h
 
 See https://www.instructables.com/Pulse-Oximeter-With-Much-Improved-Precision/
 
