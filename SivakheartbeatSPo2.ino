@@ -93,15 +93,15 @@ void loop()
   for(i=0;i<BUFFER_SIZE;i++)
   {
     while(digitalRead(oxiInt)==1);  //wait until the interrupt pin asserts
-    maxim_max30102_read_fifo((aun_red_buffer+i), (aun_ir_buffer+i));  //read from MAX30102 FIFO
+    maxim_max30102_read_fifo( (aun_ir_buffer+i),(aun_red_buffer+i));  //read from MAX30102 FIFO //swapped values for cheap modules
 
    // Serial.print(i, DEC);
   //  Serial.print(F("\t"));
-    Serial.print(aun_red_buffer[i], DEC);
+/*    Serial.print(aun_red_buffer[i], DEC);
     Serial.print(F("\t"));
     Serial.print(aun_ir_buffer[i], DEC);    
     Serial.println("");
-
+*/
   }
 
   //calculate heart rate and SpO2 after BUFFER_SIZE samples (ST seconds of samples) using Robert's method
@@ -110,14 +110,29 @@ void loop()
  // Serial.print(n_spo2);
  // Serial.print("\t");
  // Serial.println(n_heart_rate, DEC);
-
+if ((ch_spo2_valid)&&(ch_hr_valid))
+{
     u8g2.clearBuffer();
   u8g2.drawStr( 0, 0, "Sivak Heart.");
   u8g2.setCursor(0,10);
   u8g2.print(n_heart_rate,DEC);
   u8g2.print("BPM");
   u8g2.setCursor(0,20);
-  u8g2.print(n_spo2,DEC);
+  u8g2.print(n_spo2,1);
   u8g2.print("%");
   u8g2.sendBuffer();
+}
+else
+{
+   u8g2.clearBuffer();
+  u8g2.drawStr( 0, 0, "Sivak Heart.");
+  u8g2.setCursor(0,10);
+  u8g2.print("Meriam ");
+  u8g2.print("BPM");
+  u8g2.setCursor(0,20);
+  u8g2.print("Meriam ");
+  u8g2.print("SPO2");
+  u8g2.sendBuffer();
+}
+
 }
