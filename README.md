@@ -28,3 +28,6 @@ Some change in example is needed for cheap china modules
 ![alt text](https://github.com/sjsivo/Sivak-SPO2-Heartbeat-Sensor/blob/main/disp2.png?raw=true)
 
 ![alt text](https://github.com/sjsivo/Sivak-SPO2-Heartbeat-Sensor/blob/main/sensorMAX30102.png?raw=true)
+
+
+Please support me and my laboratory by money: [Buy me a cofee](paypal.me/sktechnologiesk)
